@@ -104,7 +104,7 @@ class App extends React.Component {
 
         {this.state.isLoading && <p className="loader">Loading...</p>}
 
-        {this.state.weather.weathercode && (
+        {this.state.weather?.weathercode && (
           <Weather
             weather={this.state.weather}
             location={this.state.displayLocation}
